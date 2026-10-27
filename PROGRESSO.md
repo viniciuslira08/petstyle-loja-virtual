@@ -24,9 +24,12 @@ Nunca definir a mesma propriedade nos dois. O Tailwind cuida de layout, grid, fl
 - Criada a estrutura de pastas: `css/`, `imagens/` e `scss/` (com `abstracts/`, `base/` e `components/`).
 - Criados os arquivos `index.html`, `.gitignore` e `PROGRESSO.md`.
 - Configurado o `.gitignore` para ignorar `node_modules/`, `.DS_Store` e `*.log`.
+- Primeiro commit e push para o GitHub realizados com sucesso.
+- Instalado o Sass via npm e criado o `package.json` com os scripts `sass` (watch) e `build` (minificado).
+- Criadas as variáveis da marca em `scss/abstracts/_variables.scss`.
+- Criados o `scss/base/_base.scss` e o `scss/main.scss`.
+- Primeira compilação com `npm run build` gerou o `css/style.css` sem erros.
 
 **Próximos passos**
-- Instalar o Sass e criar o `package.json` com os scripts de compilação.
-- Criar os partials SCSS e definir as variáveis da marca (cores, tipografia).
-- Montar o `index.html` base com o Tailwind via CDN e o link para `css/style.css`.
-- Começar o Header com Flexbox, usando BEM nas classes.
+- Montar o `index.html` base com Tailwind via CDN e o link para `css/style.css`.
+- Criar o Header com Flexbox (Tailwind) e o componente `header` em BEM.

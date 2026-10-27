@@ -1,0 +1,20 @@
+{
+  "name": "petstyle-loja-virtual",
+  "version": "1.0.0",
+  "description": "Página inicial da loja fictícia Pet&Style com Tailwind CSS, SCSS e BEM",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/main.scss css/style.css --watch",
+    "build": "sass scss/main.scss css/style.css --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viniciuslira08/petstyle-loja-virtual.git"
+  },
+  "keywords": [],
+  "author": "Vinicius Lira",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.106.1"
+  }
+}

@@ -1,0 +1,8 @@
+@use '../abstracts/variables' as *;
+
+body {
+  font-family: $font-family-base;
+  color: $color-text;
+  background-color: $color-background;
+  -webkit-font-smoothing: antialiased;
+}
