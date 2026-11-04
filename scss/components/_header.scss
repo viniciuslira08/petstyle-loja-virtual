@@ -1,0 +1,59 @@
+@use '../abstracts/variables' as *;
+
+.header {
+  background-color: $color-surface;
+  box-shadow: $shadow-sm;
+
+  &__logo {
+    color: $color-primary;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    text-decoration: none;
+  }
+
+  &__logo-accent {
+    color: $color-secondary;
+  }
+
+  &__nav {
+    background-color: $color-surface;
+  }
+
+  &__link {
+    color: $color-text;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color $transition-base;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-primary;
+    }
+  }
+
+  &__cta {
+    background-color: $color-primary;
+    color: $color-surface;
+    font-weight: 600;
+    border-radius: $radius-md;
+    box-shadow: $shadow-sm;
+    text-decoration: none;
+    transition: background-color $transition-base, box-shadow $transition-base;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-primary-dark;
+      box-shadow: $shadow-md;
+    }
+  }
+
+  &__toggle {
+    color: $color-text;
+    border-radius: $radius-md;
+    transition: background-color $transition-base;
+
+    &:hover {
+      background-color: $color-background;
+    }
+  }
+}
