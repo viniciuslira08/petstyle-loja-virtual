@@ -29,7 +29,20 @@ Nunca definir a mesma propriedade nos dois. O Tailwind cuida de layout, grid, fl
 - Criadas as variáveis da marca em `scss/abstracts/_variables.scss`.
 - Criados o `scss/base/_base.scss` e o `scss/main.scss`.
 - Primeira compilação com `npm run build` gerou o `css/style.css` sem erros.
+- Segundo commit e push (`feat: configura Sass com variáveis da marca e base`).
 
 **Próximos passos**
 - Montar o `index.html` base com Tailwind via CDN e o link para `css/style.css`.
 - Criar o Header com Flexbox (Tailwind) e o componente `header` em BEM.
+
+### 04/11/2026
+
+**O que foi feito**
+- Criado o `index.html` base com Tailwind via CDN e o link para `css/style.css`, com comentários marcando onde entram as seções.
+- Testado no Live Server: o fundo creme do `_base.scss` aparece e, na aba Network, `style.css` e o Tailwind carregaram sem erro 404.
+- Terceiro commit e push (`feat: cria index.html base com Tailwind via CDN`).
+
+**Próximos passos**
+- Criar o Header com Flexbox (Tailwind) e o componente `header` em BEM (`scss/components/_header.scss`).
+- Registrar o novo partial no `scss/main.scss`.
+- Testar o menu em tela pequena e grande.
