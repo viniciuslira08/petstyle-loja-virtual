@@ -41,8 +41,13 @@ Nunca definir a mesma propriedade nos dois. O Tailwind cuida de layout, grid, fl
 - Criado o `index.html` base com Tailwind via CDN e o link para `css/style.css`, com comentários marcando onde entram as seções.
 - Testado no Live Server: o fundo creme do `_base.scss` aparece e, na aba Network, `style.css` e o Tailwind carregaram sem erro 404.
 - Terceiro commit e push (`feat: cria index.html base com Tailwind via CDN`).
+- Criado o componente `scss/components/_header.scss` em BEM e registrado no `scss/main.scss`.
+- Montado o Header no `index.html`: logo, menu de navegação, botão "Fale conosco" e botão hambúrguer, com Flexbox do Tailwind e `sticky` no topo.
+- Adicionado script simples para abrir o menu no celular, com atualização do `aria-expanded`.
+- Testado em desktop (links em linha, sem hambúrguer) e em 375 px (logo e hambúrguer, menu abrindo ao clicar).
+- Quarto commit (`feat: cria Header responsivo com Flexbox e BEM`). O push falhou duas vezes com erro 500 do GitHub (`Internal Server Error`), então o commit ficou apenas local por enquanto.
 
 **Próximos passos**
-- Criar o Header com Flexbox (Tailwind) e o componente `header` em BEM (`scss/components/_header.scss`).
-- Registrar o novo partial no `scss/main.scss`.
-- Testar o menu em tela pequena e grande.
+- Repetir o `git push` quando o GitHub estabilizar e confirmar com `git status`.
+- Criar a seção Hero com Tailwind e o componente `hero` em BEM (`scss/components/_hero.scss`).
+- Ajustar o contraste do botão "Fale conosco" usando `$color-primary-dark` como cor padrão.
