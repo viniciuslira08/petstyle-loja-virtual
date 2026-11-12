@@ -1,0 +1,75 @@
+@use '../abstracts/variables' as *;
+
+.hero {
+  &__badge {
+    background-color: $color-surface;
+    color: $color-secondary;
+    font-weight: 600;
+    border-radius: 9999px;
+    box-shadow: $shadow-sm;
+  }
+
+  &__title {
+    color: $color-text;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+  }
+
+  &__title-accent {
+    color: $color-primary;
+  }
+
+  &__text {
+    color: $color-text;
+    opacity: 0.8;
+  }
+
+  &__cta {
+    background-color: $color-primary;
+    color: $color-surface;
+    font-weight: 600;
+    border: 2px solid $color-primary;
+    border-radius: $radius-md;
+    box-shadow: $shadow-sm;
+    text-decoration: none;
+    transition: background-color $transition-base, border-color $transition-base, box-shadow $transition-base, color $transition-base;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-primary-dark;
+      border-color: $color-primary-dark;
+      box-shadow: $shadow-md;
+    }
+
+    &--outline {
+      background-color: transparent;
+      color: $color-secondary;
+      border-color: $color-secondary;
+      box-shadow: none;
+
+      &:hover,
+      &:focus-visible {
+        background-color: $color-secondary;
+        border-color: $color-secondary;
+        color: $color-surface;
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__visual {
+    background: linear-gradient(135deg, $color-primary, $color-secondary);
+    color: $color-surface;
+    border-radius: 1.5rem;
+    box-shadow: $shadow-md;
+  }
+
+  &__visual-title {
+    font-weight: 800;
+  }
+
+  &__visual-text {
+    font-weight: 500;
+  }
+}
