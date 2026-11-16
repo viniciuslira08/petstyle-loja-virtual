@@ -45,9 +45,38 @@ Nunca definir a mesma propriedade nos dois. O Tailwind cuida de layout, grid, fl
 - Montado o Header no `index.html`: logo, menu de navegação, botão "Fale conosco" e botão hambúrguer, com Flexbox do Tailwind e `sticky` no topo.
 - Adicionado script simples para abrir o menu no celular, com atualização do `aria-expanded`.
 - Testado em desktop (links em linha, sem hambúrguer) e em 375 px (logo e hambúrguer, menu abrindo ao clicar).
-- Quarto commit (`feat: cria Header responsivo com Flexbox e BEM`). O push falhou duas vezes com erro 500 do GitHub (`Internal Server Error`), então o commit ficou apenas local por enquanto.
+- Quarto commit (`feat: cria Header responsivo com Flexbox e BEM`). O push falhou algumas vezes com erro 500 do GitHub (`Internal Server Error`) e passou depois, enviando junto o commit do diário (`docs: atualiza PROGRESSO.md com o Header`).
 
 **Próximos passos**
-- Repetir o `git push` quando o GitHub estabilizar e confirmar com `git status`.
 - Criar a seção Hero com Tailwind e o componente `hero` em BEM (`scss/components/_hero.scss`).
 - Ajustar o contraste do botão "Fale conosco" usando `$color-primary-dark` como cor padrão.
+
+### 12/11/2026
+
+**O que foi feito**
+- Confirmado que o GitHub voltou ao normal (`git status` limpo e `git pull` sem demora).
+- Criado o componente `scss/components/_hero.scss` em BEM, com selo, título, texto, botões, modificador `hero__cta--outline` e card visual, e registrado no `scss/main.scss`.
+- Montada a seção Hero no `index.html`: selo, título com destaque em laranja, texto, dois botões e card em gradiente com a frase "Frete grátis". Layout com Grid e Flexbox do Tailwind, em uma coluna no celular e duas colunas a partir de 768 px.
+- Testado em desktop: texto e botões à esquerda, card em gradiente à direita.
+- Quinto commit e push (`feat: cria seção Hero responsiva com Flexbox, Grid e BEM`), enviados com sucesso.
+
+**Próximos passos**
+- Conferir o Hero em 375 px e o hover dos dois botões.
+- Criar a seção de Produtos com pelo menos 4 cards (Grid do Tailwind e componente `product-card` em BEM).
+- Ajustar o contraste do botão "Fale conosco" usando `$color-primary-dark` como cor padrão.
+
+### 15/11/2026
+
+**O que foi feito**
+- Testado o Hero em 375 px no DevTools (375 x 840): tudo empilhado, com selo, título, texto, botões um sobre o outro e card em gradiente embaixo.
+- Criado o componente `scss/components/_products.scss` em BEM, com os blocos `products` (título e subtítulo) e `product-card` (imagem, categoria, nome, descrição, preço e botão), e registrado no `scss/main.scss`.
+- Montada a seção de Produtos no `index.html` com 4 cards (Roupinhas, Camas, Brinquedos e Acessórios), usando Grid do Tailwind: 1 coluna no celular, 2 a partir de 640 px e 4 a partir de 1024 px. Preços e nomes são fictícios, e a faixa colorida com o nome da categoria ocupa o lugar das fotos por enquanto.
+- Compilado com `npm run build` e testado em desktop: 4 cards lado a lado, com preços e botões "Comprar" alinhados na mesma altura.
+
+**Próximos passos**
+- Conferir os Produtos em 375 px (cards empilhados) e em cerca de 700 px (2 por linha).
+- Conferir o hover dos cards e dos botões (Hero e Produtos) e o clique em "Produtos" no menu rolando até a seção.
+- Fazer o commit e o push da seção de Produtos.
+- Criar a seção de Depoimentos (etapa 7).
+- Ajustar o contraste do botão "Fale conosco" usando `$color-primary-dark` como cor padrão.
+- Trocar os blocos coloridos por fotos reais na pasta `imagens/`, quando houver imagens.
