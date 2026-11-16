@@ -1,0 +1,54 @@
+@use '../abstracts/variables' as *;
+
+.testimonials {
+  background-color: $color-surface;
+
+  &__title {
+    color: $color-text;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+  }
+
+  &__subtitle {
+    color: $color-text;
+    opacity: 0.8;
+  }
+}
+
+.testimonial-card {
+  background-color: $color-background;
+  border-radius: $radius-md;
+  box-shadow: $shadow-sm;
+  transition: transform $transition-base, box-shadow $transition-base;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $shadow-md;
+  }
+
+  &__stars {
+    color: $color-primary;
+    letter-spacing: 0.1em;
+  }
+
+  &__text {
+    color: $color-text;
+    opacity: 0.85;
+  }
+
+  &__avatar {
+    background-color: $color-secondary-dark;
+    color: $color-surface;
+    font-weight: 700;
+    border-radius: 9999px;
+  }
+
+  &__name {
+    color: $color-text;
+    font-weight: 700;
+  }
+
+  &__pet {
+    color: $color-secondary-dark;
+  }
+}
