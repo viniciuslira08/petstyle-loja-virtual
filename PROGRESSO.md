@@ -78,10 +78,8 @@ Nunca definir a mesma propriedade nos dois. O Tailwind cuida de layout, grid, fl
 - Console do navegador sem erros, apenas o aviso esperado do Tailwind via CDN ("should not be used in production").
 - Diário dos Produtos enviado ao GitHub (`docs: atualiza PROGRESSO.md com os Produtos`).
 
-**Próximos passos**
-- Conferir com `git log --oneline -5` se os commits do código dos Produtos e dos Depoimentos já foram feitos e enviados. Se faltar algum, fazer o commit e o push.
-- Conferir os Produtos em 375 px (cards empilhados) e os Depoimentos em 768 px (3 colunas).
-- Conferir o hover dos cards e dos botões (Hero, Produtos e Depoimentos) e o clique em "Produtos" e "Depoimentos" no menu rolando até a seção. Se o título ficar escondido atrás do Header, adicionar `scroll-margin-top` no `_base.scss`.
-- Criar as seções de Contato e Footer (etapa 8).
-- Ajustar o contraste do botão "Fale conosco" usando `$color-primary-dark` como cor padrão.
-- Trocar os blocos coloridos por fotos reais na pasta `imagens/`, quando houver imagens.
+## 16/11/2026 — Imagens dos produtos e testes de responsividade
+
+**O que foi feito:** as imagens dos quatro produtos foram adicionadas à pasta `imagens/` e enviadas ao GitHub, e os cards passaram a exibir as fotos. Os testes visuais de Contato (desktop e 375 px) e de Depoimentos a 768 px foram feitos e não mostraram cortes nem rolagem horizontal. O formulário exibiu a mensagem de sucesso e limpou os campos após o envio.
+
+**Próximos passos:** testar foco dos campos, hover, envio vazio e links do menu e do Footer; tirar as capturas de tela para a entrega e conferir o repositório no GitHub.
