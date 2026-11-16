@@ -78,8 +78,14 @@ Nunca definir a mesma propriedade nos dois. O Tailwind cuida de layout, grid, fl
 - Console do navegador sem erros, apenas o aviso esperado do Tailwind via CDN ("should not be used in production").
 - Diário dos Produtos enviado ao GitHub (`docs: atualiza PROGRESSO.md com os Produtos`).
 
-## 16/11/2026 — Imagens dos produtos e testes de responsividade
+## 16/11/2026 - Imagem de destaque no Hero
 
-**O que foi feito:** as imagens dos quatro produtos foram adicionadas à pasta `imagens/` e enviadas ao GitHub, e os cards passaram a exibir as fotos. Os testes visuais de Contato (desktop e 375 px) e de Depoimentos a 768 px foram feitos e não mostraram cortes nem rolagem horizontal. O formulário exibiu a mensagem de sucesso e limpou os campos após o envio.
+- O card em degradê do Hero foi substituído por uma foto de destaque (`imagens/produto-roupinhas.png`), atendendo ao requisito de chamada principal com imagem de destaque.
+- O aviso "Frete grátis em compras acima de R$ 150" virou uma etiqueta sobre a foto, feita com classes do Tailwind direto no HTML.
+- Nenhuma imagem foi alterada, convertida ou apagada: a foto já existia no repositório e apenas foi reutilizada.
+- Testado em 375 px (mobile): foto abaixo do texto, com a etiqueta sobre ela.
+- Commit: `0a6dd2b` - `feat: adiciona imagem de destaque no Hero`.
 
-**Próximos passos:** testar foco dos campos, hover, envio vazio e links do menu e do Footer; tirar as capturas de tela para a entrega e conferir o repositório no GitHub.
+### Divisão entre Tailwind e SCSS
+
+A divisão foi proposital: o Tailwind (via CDN) cuida de layout, espaçamento e responsividade, com os breakpoints `sm:`, `md:` e `lg:`, e o SCSS com BEM cuida de cores, sombras e efeitos de hover.
