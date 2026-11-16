@@ -26,10 +26,10 @@
   }
 
   &__cta {
-    background-color: $color-primary;
+    background-color: $color-primary-dark;
     color: $color-surface;
     font-weight: 600;
-    border: 2px solid $color-primary;
+    border: 2px solid $color-primary-dark;
     border-radius: $radius-md;
     box-shadow: $shadow-sm;
     text-decoration: none;
@@ -37,8 +37,8 @@
 
     &:hover,
     &:focus-visible {
-      background-color: $color-primary-dark;
-      border-color: $color-primary-dark;
+      background-color: $color-primary;
+      border-color: $color-primary;
       box-shadow: $shadow-md;
     }
 
