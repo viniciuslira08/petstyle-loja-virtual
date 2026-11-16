@@ -1,0 +1,71 @@
+@use '../abstracts/variables' as *;
+
+.products {
+  &__title {
+    color: $color-text;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+  }
+
+  &__subtitle {
+    color: $color-text;
+    opacity: 0.8;
+  }
+}
+
+.product-card {
+  background-color: $color-surface;
+  border-radius: $radius-md;
+  box-shadow: $shadow-sm;
+  overflow: hidden;
+  transition: transform $transition-base, box-shadow $transition-base;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $shadow-md;
+  }
+
+  &__image {
+    background: linear-gradient(135deg, rgba($color-primary, 0.15), rgba($color-secondary, 0.15));
+    color: $color-secondary-dark;
+    font-weight: 700;
+  }
+
+  &__category {
+    color: $color-secondary-dark;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  &__name {
+    color: $color-text;
+    font-weight: 700;
+  }
+
+  &__description {
+    color: $color-text;
+    opacity: 0.75;
+  }
+
+  &__price {
+    color: $color-primary-dark;
+    font-weight: 800;
+  }
+
+  &__button {
+    background-color: $color-primary;
+    color: $color-surface;
+    font-weight: 600;
+    border: 2px solid $color-primary;
+    border-radius: $radius-md;
+    cursor: pointer;
+    transition: background-color $transition-base, border-color $transition-base;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-primary-dark;
+      border-color: $color-primary-dark;
+    }
+  }
+}
