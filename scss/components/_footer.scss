@@ -1,0 +1,38 @@
+@use '../abstracts/variables' as *;
+
+.footer {
+  background-color: $color-text;
+  color: $color-surface;
+
+  &__logo {
+    color: $color-surface;
+    font-weight: 800;
+    text-decoration: none;
+  }
+
+  &__logo-accent {
+    color: $color-primary;
+  }
+
+  &__text {
+    color: $color-surface;
+    opacity: 0.75;
+  }
+
+  &__link {
+    color: $color-surface;
+    text-decoration: none;
+    transition: color $transition-base;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-primary;
+    }
+  }
+
+  &__copy {
+    color: $color-surface;
+    opacity: 0.6;
+    border-top: 1px solid rgba($color-surface, 0.2);
+  }
+}

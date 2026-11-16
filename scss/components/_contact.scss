@@ -1,0 +1,71 @@
+@use '../abstracts/variables' as *;
+
+.contact {
+  &__title {
+    color: $color-text;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+  }
+
+  &__subtitle {
+    color: $color-text;
+    opacity: 0.8;
+  }
+
+  &__info-label {
+    color: $color-secondary-dark;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  &__info-text {
+    color: $color-text;
+  }
+
+  &__form {
+    background-color: $color-surface;
+    border-radius: $radius-md;
+    box-shadow: $shadow-md;
+  }
+
+  &__label {
+    color: $color-text;
+    font-weight: 600;
+  }
+
+  &__input {
+    background-color: $color-background;
+    color: $color-text;
+    border: 1px solid rgba($color-text, 0.25);
+    border-radius: $radius-md;
+    transition: border-color $transition-base, box-shadow $transition-base;
+
+    &:focus {
+      outline: none;
+      border-color: $color-secondary;
+      box-shadow: 0 0 0 3px rgba($color-secondary, 0.25);
+    }
+  }
+
+  &__button {
+    background-color: $color-primary-dark;
+    color: $color-surface;
+    font-weight: 600;
+    border: 2px solid $color-primary-dark;
+    border-radius: $radius-md;
+    cursor: pointer;
+    transition: background-color $transition-base, border-color $transition-base;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-primary;
+      border-color: $color-primary;
+    }
+  }
+
+  &__status {
+    color: $color-secondary-dark;
+    font-weight: 600;
+  }
+}

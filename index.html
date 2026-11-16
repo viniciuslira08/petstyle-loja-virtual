@@ -202,10 +202,79 @@
       </div>
     </section>
 
-    <!-- Contato: etapa 8 -->
+    <section id="contato" class="contact">
+      <div class="mx-auto grid max-w-6xl gap-10 px-4 py-12 md:grid-cols-2 md:py-20">
+
+        <div class="flex flex-col gap-6">
+          <div class="flex flex-col gap-2">
+            <h2 class="contact__title text-3xl md:text-4xl">Fale conosco</h2>
+            <p class="contact__subtitle text-lg">Tem alguma dúvida sobre os produtos ou sobre o seu pedido? Escreva para a gente.</p>
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <div class="flex flex-col">
+              <span class="contact__info-label text-xs">E-mail</span>
+              <span class="contact__info-text">contato@petstyle.com.br</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="contact__info-label text-xs">Telefone</span>
+              <span class="contact__info-text">(11) 99999-9999</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="contact__info-label text-xs">Endereço</span>
+              <span class="contact__info-text">Rua dos Pets, 123 – São Paulo, SP</span>
+            </div>
+          </div>
+        </div>
+
+        <form id="contact-form" class="contact__form flex flex-col gap-4 p-6 md:p-8">
+          <div class="flex flex-col gap-1">
+            <label for="nome" class="contact__label text-sm">Nome</label>
+            <input id="nome" name="nome" type="text" required placeholder="Seu nome" class="contact__input w-full px-4 py-3" />
+          </div>
+
+          <div class="flex flex-col gap-1">
+            <label for="email" class="contact__label text-sm">E-mail</label>
+            <input id="email" name="email" type="email" required placeholder="voce@email.com" class="contact__input w-full px-4 py-3" />
+          </div>
+
+          <div class="flex flex-col gap-1">
+            <label for="mensagem" class="contact__label text-sm">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Como podemos ajudar?" class="contact__input w-full px-4 py-3"></textarea>
+          </div>
+
+          <button type="submit" class="contact__button inline-flex items-center justify-center px-6 py-3">Enviar mensagem</button>
+
+          <p id="form-status" class="contact__status text-sm" role="status"></p>
+        </form>
+
+      </div>
+    </section>
+
   </main>
 
-  <!-- Footer: etapa 8 -->
+  <footer class="footer">
+    <div class="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-10 md:flex-row md:items-start md:justify-between">
+
+      <div class="flex max-w-sm flex-col gap-2">
+        <a href="#" class="footer__logo text-2xl">
+          Pet<span class="footer__logo-accent">&Style</span>
+        </a>
+        <p class="footer__text text-sm">Roupinhas, camas, brinquedos e acessórios para cães e gatos, escolhidos com carinho.</p>
+      </div>
+
+      <nav class="flex flex-col gap-2 text-sm" aria-label="Links do rodapé">
+        <a href="#produtos" class="footer__link">Produtos</a>
+        <a href="#depoimentos" class="footer__link">Depoimentos</a>
+        <a href="#contato" class="footer__link">Contato</a>
+      </nav>
+
+    </div>
+
+    <p class="footer__copy mx-auto max-w-6xl px-4 py-4 text-center text-xs">
+      &copy; 2026 Pet&Style. Loja fictícia criada para fins de estudo.
+    </p>
+  </footer>
 
   <script>
     const toggle = document.getElementById('menu-toggle');
@@ -216,6 +285,15 @@
       toggle.setAttribute('aria-expanded', String(!isOpen));
       menu.classList.toggle('hidden');
       menu.classList.toggle('flex');
+    });
+
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('form-status');
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      status.textContent = 'Mensagem enviada! Em breve entraremos em contato.';
+      form.reset();
     });
   </script>
 
