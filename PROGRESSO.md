@@ -71,12 +71,17 @@ Nunca definir a mesma propriedade nos dois. O Tailwind cuida de layout, grid, fl
 - Testado o Hero em 375 px no DevTools (375 x 840): tudo empilhado, com selo, título, texto, botões um sobre o outro e card em gradiente embaixo.
 - Criado o componente `scss/components/_products.scss` em BEM, com os blocos `products` (título e subtítulo) e `product-card` (imagem, categoria, nome, descrição, preço e botão), e registrado no `scss/main.scss`.
 - Montada a seção de Produtos no `index.html` com 4 cards (Roupinhas, Camas, Brinquedos e Acessórios), usando Grid do Tailwind: 1 coluna no celular, 2 a partir de 640 px e 4 a partir de 1024 px. Preços e nomes são fictícios, e a faixa colorida com o nome da categoria ocupa o lugar das fotos por enquanto.
-- Compilado com `npm run build` e testado em desktop: 4 cards lado a lado, com preços e botões "Comprar" alinhados na mesma altura.
+- Testados os Produtos em desktop (4 cards lado a lado) e em 700 px (2 cards por linha). Preços e botões "Comprar" ficam alinhados na base dos cards, e o título aparece inteiro, sem ficar escondido atrás do Header.
+- Criado o componente `scss/components/_testimonials.scss` em BEM, com os blocos `testimonials` (título e subtítulo) e `testimonial-card` (estrelas, texto, avatar, nome e pet), e registrado no `scss/main.scss`.
+- Montada a seção de Depoimentos no `index.html` com 3 cards fictícios, em fundo branco para contrastar com o creme da página: 1 coluna no celular e 3 colunas a partir de 768 px.
+- Testados os Depoimentos em desktop (3 cards lado a lado), em 375 px e em 700 px (cards empilhados, como previsto, porque o breakpoint é 768 px).
+- Console do navegador sem erros, apenas o aviso esperado do Tailwind via CDN ("should not be used in production").
+- Diário dos Produtos enviado ao GitHub (`docs: atualiza PROGRESSO.md com os Produtos`).
 
 **Próximos passos**
-- Conferir os Produtos em 375 px (cards empilhados) e em cerca de 700 px (2 por linha).
-- Conferir o hover dos cards e dos botões (Hero e Produtos) e o clique em "Produtos" no menu rolando até a seção.
-- Fazer o commit e o push da seção de Produtos.
-- Criar a seção de Depoimentos (etapa 7).
+- Conferir com `git log --oneline -5` se os commits do código dos Produtos e dos Depoimentos já foram feitos e enviados. Se faltar algum, fazer o commit e o push.
+- Conferir os Produtos em 375 px (cards empilhados) e os Depoimentos em 768 px (3 colunas).
+- Conferir o hover dos cards e dos botões (Hero, Produtos e Depoimentos) e o clique em "Produtos" e "Depoimentos" no menu rolando até a seção. Se o título ficar escondido atrás do Header, adicionar `scroll-margin-top` no `_base.scss`.
+- Criar as seções de Contato e Footer (etapa 8).
 - Ajustar o contraste do botão "Fale conosco" usando `$color-primary-dark` como cor padrão.
 - Trocar os blocos coloridos por fotos reais na pasta `imagens/`, quando houver imagens.
